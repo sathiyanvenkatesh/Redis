@@ -23,8 +23,8 @@ public class JedisSentinelPoolTest {
 	  
     String master = "mymaster";// sentinel master name configured in sentinel.conf file. 
     Set<String> sentinels = new HashSet<String>();// creating set and add all the sentinel ip's and port 
-    sentinels.add("192.168.139.229:26379");// GCE :
-    sentinels.add("192.168.139.131:26380");// GCE:
+    sentinels.add("192.168.139.229:26379");// 
+    sentinels.add("192.168.139.131:26380");// 
     JedisSentinelPool pool = new JedisSentinelPool(master, sentinels);// create JedisSentinelPool
  
 
